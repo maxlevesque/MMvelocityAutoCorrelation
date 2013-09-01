@@ -1,0 +1,358 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     11361,        349]
+NotebookOptionsPosition[     10765,        323]
+NotebookOutlinePosition[     11123,        339]
+CellTagsIndexPosition[     11080,        336]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[TextData[{
+ "This ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " notebook import a file in format\n\n",
+ Cell[BoxData[{
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["v", "x"], "(", 
+     RowBox[{"i", ",", "t"}], ")"}], "    ", 
+    RowBox[{
+     SubscriptBox["v", "y"], "(", 
+     RowBox[{"i", ",", "t"}], ")"}], "    ", 
+    RowBox[{
+     SubscriptBox["v", "z"], "(", 
+     RowBox[{"i", ",", "t"}], ")"}]}], 
+   TraditionalForm], "\[IndentingNewLine]", 
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["v", "x"], "(", 
+     RowBox[{
+      RowBox[{"i", "+", "1"}], ",", "t"}], ")"}], "    ", 
+    RowBox[{
+     SubscriptBox["v", "y"], "(", 
+     RowBox[{
+      RowBox[{"i", "+", "1"}], ",", "t"}], ")"}], "    ", 
+    RowBox[{
+     SubscriptBox["v", "z"], "(", 
+     RowBox[{
+      RowBox[{"i", "+", "1"}], ",", "t"}], ")"}]}], 
+   TraditionalForm], "\[IndentingNewLine]", 
+  FormBox[
+   RowBox[{"[", "...", "]"}], TraditionalForm], "\[IndentingNewLine]", 
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["v", "x"], "(", 
+     RowBox[{"nAt", ",", "t"}], ")"}], "    ", 
+    RowBox[{
+     SubscriptBox["v", "y"], "(", 
+     RowBox[{"nAt", ",", "t"}], ")"}], "    ", 
+    RowBox[{
+     SubscriptBox["v", "z"], "(", 
+     RowBox[{"nAt", ",", "t"}], ")"}]}], 
+   TraditionalForm], "\[IndentingNewLine]", 
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["v", "x"], "(", 
+     RowBox[{"i", ",", 
+      RowBox[{"t", "+", "1"}]}], ")"}], "    ", 
+    RowBox[{
+     SubscriptBox["v", "y"], "(", 
+     RowBox[{"i", ",", 
+      RowBox[{"t", "+", "1"}]}], ")"}], "    ", 
+    RowBox[{
+     SubscriptBox["v", "z"], "(", 
+     RowBox[{"i", ",", 
+      RowBox[{"t", "+", "1"}]}], ")"}]}], 
+   TraditionalForm], "\[IndentingNewLine]", 
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["v", "x"], "(", 
+     RowBox[{
+      RowBox[{"i", "+", "1"}], ",", 
+      RowBox[{"t", "+", "1"}]}], ")"}], "    ", 
+    RowBox[{
+     SubscriptBox["v", "y"], "(", 
+     RowBox[{
+      RowBox[{"i", "+", "1"}], ",", 
+      RowBox[{"t", "+", "1"}]}], ")"}], "    ", 
+    RowBox[{
+     SubscriptBox["v", "z"], "(", 
+     RowBox[{
+      RowBox[{"i", "+", "1"}], ",", 
+      RowBox[{"t", "+", "1"}]}], ")"}]}], 
+   TraditionalForm], "\[IndentingNewLine]", 
+  FormBox[
+   RowBox[{"[", "...", "]"}], TraditionalForm], "\[IndentingNewLine]", 
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["v", "x"], "(", 
+     RowBox[{"nAt", ",", 
+      RowBox[{"t", "+", "1"}]}], ")"}], "    ", 
+    RowBox[{
+     SubscriptBox["v", "y"], "(", 
+     RowBox[{"nAt", ",", 
+      RowBox[{"t", "+", "1"}]}], ")"}], "    ", 
+    RowBox[{
+     SubscriptBox["v", "z"], "(", 
+     RowBox[{"nAt", ",", 
+      RowBox[{"t", "+", "1"}]}], ")"}]}], 
+   TraditionalForm], "\[IndentingNewLine]", 
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["v", "x"], "(", 
+     RowBox[{"i", ",", "nStep"}], ")"}], "    ", 
+    RowBox[{
+     SubscriptBox["v", "y"], "(", 
+     RowBox[{"i", ",", "nStep"}], ")"}], "    ", 
+    RowBox[{
+     SubscriptBox["v", "z"], "(", 
+     RowBox[{"i", ",", "nStep"}], ")"}]}], 
+   TraditionalForm], "\[IndentingNewLine]", 
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["v", "x"], "(", 
+     RowBox[{
+      RowBox[{"i", "+", "1"}], ",", "nStep"}], ")"}], "    ", 
+    RowBox[{
+     SubscriptBox["v", "y"], "(", 
+     RowBox[{
+      RowBox[{"i", "+", "1"}], ",", "nStep"}], ")"}], "    ", 
+    RowBox[{
+     SubscriptBox["v", "z"], "(", 
+     RowBox[{
+      RowBox[{"i", "+", "1"}], ",", "nStep"}], ")"}]}], 
+   TraditionalForm], "\[IndentingNewLine]", 
+  FormBox[
+   RowBox[{"[", "...", "]"}], TraditionalForm], "\[IndentingNewLine]", 
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["v", "x"], "(", 
+     RowBox[{"nAt", ",", "nStep"}], ")"}], "    ", 
+    RowBox[{
+     SubscriptBox["v", "y"], "(", 
+     RowBox[{"nAt", ",", "nStep"}], ")"}], "    ", 
+    RowBox[{
+     SubscriptBox["v", "z"], "(", 
+     RowBox[{"nAt", ",", "nStep"}], ")"}]}], TraditionalForm]}],
+  FormatType->"TraditionalForm"],
+ " \n\nand computes the velocity autocorrelation function (VACF) defined by\n",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{"VACF", "(", "\[Tau]", ")"}], "=", 
+    SubscriptBox[
+     RowBox[{"\[LeftAngleBracket]", 
+      RowBox[{
+       RowBox[{
+        SubscriptBox[
+         StyleBox["v",
+          FontWeight->"Bold"], "i"], "(", "t", ")"}], ".", 
+       RowBox[{
+        SubscriptBox[
+         StyleBox["v",
+          FontWeight->"Bold"], "i"], "(", 
+        RowBox[{"t", "+", "\[Tau]"}], ")"}]}], "\[RightAngleBracket]"}], 
+     RowBox[{"i", ",", "t"}]]}], TraditionalForm]],
+  FormatType->"TraditionalForm"],
+ ",\nwhere the ensemble average runs over all equivalent sites and all \
+times."
+}], "Section",
+ CellChangeTimes->{{3.58686513903576*^9, 3.586865147037114*^9}, {
+  3.5868672361520653`*^9, 3.5868672394550447`*^9}, {3.587052743078269*^9, 
+  3.5870531103729153`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"walk", "=", 
+    RowBox[{"Import", "[", 
+     RowBox[{
+     "\"\</home/levesque/Recherche/src/MMvelocityAutoCorrelation/traj_HISTORY_\
+XUDONG_SAMEDI\>\"", ",", "\"\<Table\>\""}], "]"}]}], ";"}], "//", 
+  "AbsoluteTiming"}]], "Input",
+ CellChangeTimes->{{3.5868675784234343`*^9, 3.586867579143652*^9}, {
+  3.58686762140313*^9, 3.58686762628967*^9}, {3.586868308460753*^9, 
+  3.5868683640660257`*^9}, {3.58686849729802*^9, 3.5868685009953423`*^9}, {
+  3.586868544189204*^9, 3.58686854479552*^9}, {3.586868607408691*^9, 
+  3.586868611132258*^9}, {3.5869720131634083`*^9, 3.5869720142780313`*^9}, {
+  3.586972092307519*^9, 3.5869720992494*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "16.6534639999999996007318259216845035553`7.242104495843506", ",", "Null"}],
+   "}"}]], "Output",
+ CellChangeTimes->{
+  3.586868617132265*^9, 3.586868855921915*^9, 3.586868894082199*^9, {
+   3.586972106980196*^9, 3.586972117962041*^9}, 3.5869723154328814`*^9, 
+   3.586974958873111*^9}]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{"ClearAll", "[", 
+  RowBox[{"vacf", ",", "v"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"With", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"nAt", "=", "50"}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"nStep", "=", 
+     RowBox[{"Quotient", "[", 
+      RowBox[{
+       RowBox[{"Length", "@", "walk"}], ",", "nAt"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"v", "[", 
+      RowBox[{"i_Integer", ",", "t_Integer"}], "]"}], ":=", 
+     RowBox[{
+      RowBox[{"v", "[", 
+       RowBox[{"i", ",", "t"}], "]"}], "=", 
+      RowBox[{"walk", "[", 
+       RowBox[{"[", 
+        RowBox[{
+         RowBox[{"nAt", "*", 
+          RowBox[{"(", 
+           RowBox[{"t", "-", "1"}], ")"}]}], "+", "i"}], "]"}], "]"}]}]}], 
+    ";", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"vacf", "[", "t_Integer", "]"}], ":=", 
+     RowBox[{
+      RowBox[{"vacf", "[", "t", "]"}], "=", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Table", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"v", "[", 
+            RowBox[{"i", ",", "t0"}], "]"}], ".", 
+           RowBox[{"v", "[", 
+            RowBox[{"i", ",", 
+             RowBox[{"t0", "+", "t"}]}], "]"}]}], ",", 
+          RowBox[{"{", 
+           RowBox[{"i", ",", "1", ",", "nAt"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"t0", ",", "1", ",", 
+            RowBox[{"nStep", "-", "t"}]}], "}"}]}], "]"}], "//", "Mean"}], "//",
+        "Mean"}]}]}]}]}], "\[IndentingNewLine]", "]"}]}], "Input",
+ CellChangeTimes->{{3.586865149649838*^9, 3.586865176244261*^9}, {
+   3.5868652668350277`*^9, 3.586865282130583*^9}, {3.5868658670192003`*^9, 
+   3.5868658789855013`*^9}, {3.58686606416746*^9, 3.586866119065206*^9}, {
+   3.586866243665454*^9, 3.586866245440027*^9}, {3.5868662880800858`*^9, 
+   3.586866320143546*^9}, {3.586866695104679*^9, 3.5868667648489027`*^9}, 
+   3.5868670516323833`*^9, {3.58686711087143*^9, 3.586867111046763*^9}, {
+   3.586867410352785*^9, 3.586867417382863*^9}, {3.586868516953199*^9, 
+   3.5868685682922363`*^9}, {3.5868688615135117`*^9, 3.586868862800947*^9}, {
+   3.586972187791769*^9, 3.5869721883084507`*^9}, {3.586972719093074*^9, 
+   3.586972720404793*^9}, 3.586972760609942*^9, 3.586973292173644*^9, {
+   3.586973499183013*^9, 3.5869735001779003`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Export", "[", 
+  RowBox[{
+  "\"\</home/levesque/Recherche/src/MMvelocityAutoCorrelation/vacf_HISTORY_\
+XUDONG_SAMEDI\>\"", ",", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"t", ",", 
+       RowBox[{"vacf", "[", "t", "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "0", ",", "nStep"}], "}"}]}], "]"}], ",", 
+   "\"\<Table\>\""}], "]"}]], "Input",
+ CellChangeTimes->{{3.586973620099945*^9, 3.586973720075947*^9}, {
+  3.586974936304967*^9, 3.5869749377361803`*^9}, {3.586974999467009*^9, 
+  3.58697500385562*^9}, {3.586975067243445*^9, 3.5869750813526297`*^9}}],
+
+Cell[BoxData["$Aborted"], "Output",
+ CellChangeTimes->{{3.586975064106587*^9, 3.586975067759489*^9}, 
+   3.587050618651293*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"ListPlot", "[", 
+   RowBox[{
+    RowBox[{"Table", "[", 
+     RowBox[{
+      RowBox[{"vacf", "[", "t", "]"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"t", ",", "0", ",", "300"}], "}"}]}], "]"}], ",", 
+    RowBox[{"PlotStyle", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"PointSize", "[", "0.02", "]"}], ",", "Black"}], "}"}]}]}], 
+   "]"}], "*)"}]], "Input",
+ CellChangeTimes->{{3.5868672467216883`*^9, 3.5868672753876743`*^9}, {
+   3.586867438683421*^9, 3.586867480590089*^9}, {3.586867511091126*^9, 
+   3.586867528740694*^9}, {3.586869328221385*^9, 3.586869539140209*^9}, {
+   3.586869711575053*^9, 3.5868697119521837`*^9}, 3.58686976810004*^9, {
+   3.586870363957199*^9, 3.586870404014781*^9}, {3.586871724731587*^9, 
+   3.586871725386737*^9}, {3.586972387692371*^9, 3.5869724176151037`*^9}, {
+   3.5869731527694397`*^9, 3.586973158700337*^9}, {3.5869732149288187`*^9, 
+   3.586973227292925*^9}, {3.586973319980551*^9, 3.586973336345256*^9}, {
+   3.5869737466339397`*^9, 3.586973749436026*^9}},
+ TextJustification->0.25]
+}, Open  ]]
+},
+WindowSize->{1138, 868},
+WindowMargins->{{147, Automatic}, {0, Automatic}},
+ShowSelection->True,
+FrontEndVersion->"9.0 for Linux x86 (64-bit) (February 7, 2013)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 4911, 162, 867, "Section"],
+Cell[CellGroupData[{
+Cell[5515, 188, 687, 14, 55, "Input"],
+Cell[6205, 204, 328, 8, 32, "Output"]
+}, Open  ]],
+Cell[6548, 215, 2322, 56, 143, "Input"],
+Cell[CellGroupData[{
+Cell[8895, 275, 628, 15, 55, "Input"],
+Cell[9526, 292, 127, 2, 32, "Output"]
+}, Open  ]],
+Cell[9668, 297, 1081, 23, 32, "Input"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
